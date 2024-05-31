@@ -6,7 +6,7 @@ import BookCard from "../BookCard/BookCard";
 
 const Books = () => {
     const { data, loading } = useBooksData();
-    console.log(data)
+    //console.log(data)
     return (
       
             <div className="text-center my-14">
