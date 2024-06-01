@@ -1,10 +1,17 @@
+import useLocalStorage from "../../Hooks/useLocalStorage";
+import CardStyle from "../CardStyle/CardStyle";
+
 
 
 const WishlistBooks = () => {
+    const {localData} = useLocalStorage();
+    console.log(localData)
     
     return (
-        <div>
-            <h2>This is wishlist</h2>
+        <div className="mt-6">
+            {
+                localData.map((list, idx) => <CardStyle key={idx} list = {list}></CardStyle>)
+            }
         </div>
     );
 };

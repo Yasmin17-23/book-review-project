@@ -14,7 +14,10 @@ const BookDetails = () => {
     const handleReadBook = () => {
        saveToLocalStorage(singleBook);
     }
-
+    
+    const handleWishlistBook = () => {
+        saveToLocalStorage(singleBook);
+    }
     useEffect(() => {
         const singleBook = data.find((book) => book.bookId === bookId);
         //console.log(singleBook);
@@ -84,13 +87,14 @@ const BookDetails = () => {
                             </table>
                         </div>
                     </div>
-                    <div className="">
+                    <div className="flex justify-between items-center">
                      
                         <button onClick={() => handleReadBook(singleBook)}
-                       className="btn bg-transparent hover:bg-[#23BE0A] hover:text-white
+                        className="btn bg-transparent hover:bg-[#23BE0A] hover:text-white
                        border-[#1313134D] mr-2 px-8">Read</button>
-                   
-                      <button className="btn bg-[#50B1C9] border-none 
+                      
+                      <button onClick={() => handleWishlistBook(singleBook)}
+                      className="btn bg-[#50B1C9] border-none 
                       hover:bg-[#518997] px-8 text-white hover:text-black">Wishlist</button>
                     </div>
                    </div>

@@ -5,7 +5,7 @@ import CardStyle from "../CardStyle/CardStyle";
 
 const ReadBooks = () => {
     const {localData} = useLocalStorage();
-    console.log(localData);
+    //console.log(localData);
 
     
     
