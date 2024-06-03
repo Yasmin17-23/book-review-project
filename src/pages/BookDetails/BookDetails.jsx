@@ -2,7 +2,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useBooksData from "../../Hooks/useBooksData";
-import { saveToLocalStorage } from "../../utilis/localStorage";
+import { saveToLocalStorage, saveToLocalStorage2 } from "../../utilis/localStorage";
 
 
 const BookDetails = () => {
@@ -16,7 +16,7 @@ const BookDetails = () => {
     }
     
     const handleWishlistBook = () => {
-        saveToLocalStorage(singleBook);
+        saveToLocalStorage2(singleBook);
     }
     useEffect(() => {
         const singleBook = data.find((book) => book.bookId === bookId);
