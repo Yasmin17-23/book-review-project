@@ -7,7 +7,7 @@ import { saveToLocalStorage, saveToLocalStorage2 } from "../../utilis/localStora
 
 const BookDetails = () => {
     const [singleBook, setSingleBook] = useState({});
-    const { data, loading } = useBooksData();
+    const { data } = useBooksData();
     const { bookId } = useParams();
     //console.log(bookId);
 
