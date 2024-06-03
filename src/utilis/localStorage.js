@@ -20,12 +20,6 @@ export const saveToLocalStorage = (book) => {
      
 }
 
-   
-    
-   
-   
-
-
 export const getFromLocalStorage = () => {
     const book = JSON.parse(localStorage.getItem('book-list')) || [];
     return book;

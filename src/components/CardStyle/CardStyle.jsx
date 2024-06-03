@@ -2,9 +2,10 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { LuFileBarChart } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const CardStyle = ({ list }) => {
-    const { bookName, image, author, category, rating, tags = [],  totalPages, publisher,
+    const { bookId, bookName, image, author, category, rating, tags = [],  totalPages, publisher,
         yearOfPublishing } = list || {};
     return (
         <div className="border-2 border-[#13131326] rounded-xl mb-3 p-4 flex justify-start items-center">
@@ -46,9 +47,11 @@ const CardStyle = ({ list }) => {
                 <button className="bg-[#FFAC3326] text-[#FFAC33] text-[13px] py-3 px-4 rounded-full mr-2">
                     <span className="mr-1">Rating</span> {rating}
                 </button>
-                <button className="bg-[#23BE0A] text-white text-[13px] py-3 px-4 rounded-full">
+               <Link to={`/book-details/${bookId}`}>
+                  <button className="bg-[#23BE0A] text-white text-[13px] py-3 px-4 rounded-full">
                     View Details
-                </button>
+                  </button>
+               </Link>
                 
                </div>
             </div>
