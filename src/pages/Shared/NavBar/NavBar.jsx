@@ -19,8 +19,12 @@ const NavBar = () => {
                        <NavLink to="/readpages" className={({isActive}) => isActive ?
                     ("text-[#23BE0A] text-md rounded-lg  py-2 px-3 flex justify-between items-center hover:border-2 hover:border-[#23BE0A]")
                     :( "text-md text-[#131313CC] flex justify-between items-center")}>Pages to Read</NavLink>
-                        
-                        
+                     <NavLink to="/topbooks" className={({isActive}) => isActive ?
+                    ("text-[#23BE0A] text-md rounded-lg  py-2 px-3 flex justify-between items-center hover:border-2 hover:border-[#23BE0A]")
+                    :( "text-md text-[#131313CC] flex justify-between items-center")}>Top Books</NavLink>
+                    <NavLink to="/arrivals" className={({isActive}) => isActive ?
+                    ("text-[#23BE0A] text-md rounded-lg  py-2 px-3 flex justify-between items-center hover:border-2 hover:border-[#23BE0A]")
+                    :( "text-md text-[#131313CC] flex justify-between items-center")}>New Arrivals</NavLink>
                     </ul>
 
                 </div>
@@ -38,7 +42,12 @@ const NavBar = () => {
                      <NavLink to="/readpages" className={({isActive}) => isActive ?
                     ("text-[#23BE0A] text-md rounded-lg  py-2 px-3 flex justify-between items-center hover:border-2 hover:border-[#23BE0A]")
                     :( "text-md text-[#131313CC] flex justify-between items-center")}>Pages to Read</NavLink>
-                    
+                     <NavLink to="/topbooks" className={({isActive}) => isActive ?
+                    ("text-[#23BE0A] text-md rounded-lg  py-2 px-3 flex justify-between items-center hover:border-2 hover:border-[#23BE0A]")
+                    :( "text-md text-[#131313CC] flex justify-between items-center")}>Top Books</NavLink>
+                     <NavLink to="/arrivals" className={({isActive}) => isActive ?
+                    ("text-[#23BE0A] text-md rounded-lg  py-2 px-3 flex justify-between items-center hover:border-2 hover:border-[#23BE0A]")
+                    :( "text-md text-[#131313CC] flex justify-between items-center")}>New Arrivals</NavLink>
                    
                 </ul>
             </div>
